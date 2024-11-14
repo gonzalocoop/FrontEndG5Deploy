@@ -1,0 +1,17 @@
+<div class="login-container">
+  <h2>Inicie sesión</h2>
+
+  <mat-form-field class="custom-field">
+    <mat-label>Usuario</mat-label>
+    <input matInput placeholder="Username" [(ngModel)]="username" />
+  </mat-form-field>
+
+  <mat-form-field class="custom-field">
+    <mat-label>Contraseña</mat-label>
+    <input type="password" matInput placeholder="Password" [(ngModel)]="password" />
+  </mat-form-field>
+
+  <button mat-raised-button class="login-button" (click)="login()">Ingresar</button>
+  <button mat-raised-button class="login-button" routerLink="/landing">Salir</button>
+</div>
+
