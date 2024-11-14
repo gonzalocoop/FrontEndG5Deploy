@@ -22,8 +22,8 @@ export const appConfig: ApplicationConfig = {
       JwtModule.forRoot({
         config: {
           tokenGetter: tokenGetter,
-          allowedDomains: ['localhost:8081'],
-          disallowedRoutes: ['http://localhost:8081/login/forget'],
+          allowedDomains: ['zentechhverse.azurewebsites.net'],
+          disallowedRoutes: ['https://zentechhverse.azurewebsites.net/login/forget'],
         },
       })
     )
